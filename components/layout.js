@@ -27,19 +27,21 @@ const useStyles = makeStyles((theme) => ({
 const Layout = ({ children }) => {
   const classes = useStyles();
   return (
-    <Container className={classes.layoutContainer}>
-      <Head>
-        <title>Олимп</title>
-        <meta
-          name='description'
-          content='Строительная компания Олимп , г.Запорожье, Любые виды работ для ОСББ'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Navbar />
-      <main className={classes.main}>{children}</main>
+    <>
+      <Container className={classes.layoutContainer}>
+        <Head>
+          <title>Олимп</title>
+          <meta
+            name='description'
+            content='Строительная компания Олимп , г.Запорожье, Любые виды работ для ОСББ'
+          />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <Navbar />
+        <main className={classes.main}>{children}</main>
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 };
 

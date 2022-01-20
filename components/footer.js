@@ -15,8 +15,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-start',
     alignItems: 'center',
 
+    margin: '2rem auto',
+
     backgroundColor: '#e0e0e0',
-    marginTop: '1rem',
+
+    padding: '0px 5px',
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row',
       justifyContent: 'space-between',
