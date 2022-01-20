@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -34,15 +35,17 @@ const Navbar = () => {
             <Grid item xs={6}>
               <Grid container justifyContent='flex-start'>
                 <Grid item>
-                  <IconButton
-                    size='large'
-                    edge='start'
-                    color='inherit'
-                    aria-label='menu'
-                    onClick={handleDrawerToggle}
-                  >
-                    <MenuIcon />
-                  </IconButton>
+                  <Tooltip title='Меню'>
+                    <IconButton
+                      size='large'
+                      edge='start'
+                      color='inherit'
+                      aria-label='menu'
+                      onClick={handleDrawerToggle}
+                    >
+                      <MenuIcon />
+                    </IconButton>
+                  </Tooltip>
                 </Grid>
                 <Grid item>
                   <Link href='/'>

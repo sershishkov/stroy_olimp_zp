@@ -347,10 +347,6 @@ export default function Home() {
           </Grid>
         </Grid>
       </Grid>
-
-      {/* <Grid container justifyContent={'center'} alignItems={'center'}>
-        <Grid item></Grid>
-      </Grid> */}
     </Grid>
   );
 }

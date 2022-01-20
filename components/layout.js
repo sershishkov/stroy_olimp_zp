@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1536,
   },
   main: {
-    paddingTop: 99,
+    paddingTop: 100,
     maxWidth: 1200,
     minWidth: 600,
 
